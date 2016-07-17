@@ -4,7 +4,7 @@
 'use strict';
 
 // Функция добавляет в начало container элемент newElement
-function prepend(container, newElement) {
+export function prepend(container, newElement) {
     // Вставляем новый элемент перед первым элементом контейнера
     container.insertBefore(newElement, container.firstChild);
 }

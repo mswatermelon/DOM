@@ -3,7 +3,7 @@
  */
 'use strict';
 
-function scanDOM() {
+export function scanDOM() {
     let html = document.children[0],
         tags = {},
         classes = {},
@@ -17,7 +17,8 @@ function scanDOM() {
         else obj[prop]++;
     };
 
-    //Функция перебирает узлы на странице и формирует статистику по элементам и классам
+    //Функция перебирает узлы на странице и формирует статистику по элементам
+    // и классам
     let recScan = function (nodes) {
         for (let i = 0; i < nodes.length; i++){
             let node = nodes[i];
